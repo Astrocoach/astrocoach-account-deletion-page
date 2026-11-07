@@ -1,0 +1,271 @@
+<!doctype html><html><head><meta charset=utf8><title>Delete your Astrocoach account</title><meta name=description content="How to permanently delete your Astrocoach account and what happens to your data."><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}</style></head><body>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f5f3ef;
+    --surface: #ffffff;
+    --surface-2: #efece5;
+    --ink: #1c1b29;
+    --ink-soft: #4a4860;
+    --ink-faint: #7c7a90;
+    --hairline: #e2ddd2;
+    --accent: #b8860b;
+    --accent-soft: #f0e4c4;
+    --accent-ink: #7a5a06;
+    --danger: #a03227;
+    --danger-soft: #f6e3df;
+    --shadow: 0 1px 2px rgba(28,27,41,.06), 0 8px 30px rgba(28,27,41,.06);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0d18;
+      --surface: #17162a;
+      --surface-2: #1f1d38;
+      --ink: #ece9f5;
+      --ink-soft: #b3aecb;
+      --ink-faint: #7f7a99;
+      --hairline: #2b2947;
+      --accent: #e8c35a;
+      --accent-soft: #2a2540;
+      --accent-ink: #f0d67d;
+      --danger: #e8897d;
+      --danger-soft: #33202a;
+      --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 40px rgba(0,0,0,.5);
+    }
+  }
+  :root[data-theme="light"] {
+    color-scheme: light;
+    --bg: #f5f3ef; --surface: #ffffff; --surface-2: #efece5;
+    --ink: #1c1b29; --ink-soft: #4a4860; --ink-faint: #7c7a90;
+    --hairline: #e2ddd2; --accent: #b8860b; --accent-soft: #f0e4c4;
+    --accent-ink: #7a5a06; --danger: #a03227; --danger-soft: #f6e3df;
+    --shadow: 0 1px 2px rgba(28,27,41,.06), 0 8px 30px rgba(28,27,41,.06);
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --bg: #0e0d18; --surface: #17162a; --surface-2: #1f1d38;
+    --ink: #ece9f5; --ink-soft: #b3aecb; --ink-faint: #7f7a99;
+    --hairline: #2b2947; --accent: #e8c35a; --accent-soft: #2a2540;
+    --accent-ink: #f0d67d; --danger: #e8897d; --danger-soft: #33202a;
+    --shadow: 0 1px 2px rgba(0,0,0,.4), 0 10px 40px rgba(0,0,0,.5);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 72px 24px 96px;
+  }
+
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .8rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    font-weight: 600;
+  }
+  .brand .glyph {
+    width: 26px; height: 26px;
+    display: grid; place-items: center;
+    border: 1px solid var(--hairline);
+    border-radius: 999px;
+    color: var(--accent);
+    font-size: .95rem;
+  }
+
+  h1 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: clamp(2.1rem, 6vw, 2.9rem);
+    line-height: 1.1;
+    letter-spacing: -.01em;
+    text-wrap: balance;
+    margin: 28px 0 14px;
+  }
+
+  .lede {
+    font-size: 1.12rem;
+    color: var(--ink-soft);
+    max-width: 60ch;
+    margin: 0;
+  }
+
+  hr.rule {
+    border: none;
+    border-top: 1px solid var(--hairline);
+    margin: 48px 0;
+  }
+
+  h2 {
+    font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -.005em;
+    margin: 0 0 22px;
+  }
+
+  /* Steps — a real ordered sequence */
+  ol.steps {
+    list-style: none;
+    counter-reset: step;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 16px 4px 16px 52px;
+    border-bottom: 1px solid var(--hairline);
+  }
+  ol.steps li:last-child { border-bottom: none; }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0; top: 14px;
+    width: 30px; height: 30px;
+    display: grid; place-items: center;
+    background: var(--accent-soft);
+    color: var(--accent-ink);
+    border-radius: 999px;
+    font-size: .85rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  ol.steps li b { font-weight: 600; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 14px;
+    padding: 26px 28px;
+    box-shadow: var(--shadow);
+  }
+
+  .card.warn {
+    border-color: color-mix(in srgb, var(--danger) 30%, var(--hairline));
+    background: var(--surface);
+  }
+  .card.warn h2 { color: var(--danger); display: flex; align-items: center; gap: 10px; }
+
+  ul.plain {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  ul.plain li {
+    padding-left: 26px;
+    position: relative;
+    color: var(--ink-soft);
+  }
+  ul.plain li::before {
+    content: "";
+    position: absolute;
+    left: 4px; top: 11px;
+    width: 6px; height: 6px;
+    border-radius: 999px;
+    background: var(--danger);
+  }
+
+  .note {
+    color: var(--ink-soft);
+    font-size: .98rem;
+  }
+
+  .support {
+    margin-top: 40px;
+    background: var(--surface-2);
+    border-radius: 14px;
+    padding: 26px 28px;
+  }
+  .support h2 { font-size: 1.15rem; margin-bottom: 8px; }
+  .support a {
+    color: var(--accent-ink);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+    padding-bottom: 1px;
+  }
+  .support a:hover { border-bottom-color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  footer {
+    margin-top: 56px;
+    padding-top: 22px;
+    border-top: 1px solid var(--hairline);
+    color: var(--ink-faint);
+    font-size: .82rem;
+  }
+</style>
+
+<div class="page">
+  <div class="brand">
+    <span class="glyph">✦</span>
+    <span>Astrocoach&nbsp;·&nbsp;Account</span>
+  </div>
+
+  <h1>Delete your Astrocoach account</h1>
+  <p class="lede">You can permanently delete your Astrocoach account at any time, directly from within the app. Here's how it works and what happens to your data.</p>
+
+  <hr class="rule" />
+
+  <section>
+    <h2>How to delete your account</h2>
+    <ol class="steps">
+      <li>Open the <b>Astrocoach</b> app.</li>
+      <li>Sign in to your account.</li>
+      <li>Go to <b>Account</b>.</li>
+      <li>Open <b>Account Settings</b>.</li>
+      <li>Tap <b>Delete Account</b>.</li>
+      <li>Confirm your choice to permanently delete your account.</li>
+    </ol>
+  </section>
+
+  <hr class="rule" />
+
+  <section class="card warn">
+    <h2><span aria-hidden="true">⚠</span> What happens when you delete</h2>
+    <p class="note" style="margin-top:0">Deletion is permanent and cannot be undone. When you confirm:</p>
+    <ul class="plain">
+      <li>Your Astrocoach account is permanently deleted.</li>
+      <li>Your personal profile and account information are removed.</li>
+      <li>All app data associated with your account is deleted.</li>
+    </ul>
+  </section>
+
+  <hr class="rule" />
+
+  <section>
+    <h2>Data retention</h2>
+    <p class="note">Some information may be retained only where required to comply with applicable laws, prevent fraud, resolve disputes, or enforce our legal obligations. Any retained information is kept only for the minimum period required and is securely deleted when it is no longer needed.</p>
+  </section>
+
+  <div class="support">
+    <h2>Need help?</h2>
+    <p class="note" style="margin:0">If you can't access your account or need assistance with deletion, contact our support team at <a href="mailto:support@astro-c.com">support@astro-c.com</a>.</p>
+  </div>
+
+  <footer>
+    Astrocoach · Account deletion
+  </footer>
+</div>
+
+</body></html>
